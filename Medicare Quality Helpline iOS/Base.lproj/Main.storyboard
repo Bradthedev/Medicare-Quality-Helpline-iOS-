@@ -1,24 +1,396 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Medicare_Quality_Helpline_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="28e-Q5-lXT">
+                                <rect key="frame" x="16" y="20" width="382" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Slu-e9-anP"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Select your state or territory">
+                                        <attributes>
+                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Hawaii includes the Pacific Territories of the American Samoa, Guam and the Commonwealth of the Northern Mariana Islands." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfQ-zk-XhF">
+                                <rect key="frame" x="16" y="657" width="382" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="kpa-kN-PfZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UBM-FP-Kby">
+                                <rect key="frame" x="16" y="58" width="382" height="591"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M54-fd-bjS">
+                                    <size key="itemSize" width="85" height="49"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="xw8-Dr-NyQ" customClass="MyCollectionViewCell" customModule="Medicare_Quality_Helpline_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="85" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="85" height="49"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEg-jw-Xfd">
+                                                    <rect key="frame" x="2" y="2" width="80" height="44.666666666666664"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="gEg-jw-Xfd" firstAttribute="centerX" secondItem="xw8-Dr-NyQ" secondAttribute="centerX" id="2qU-KM-yYS"/>
+                                            <constraint firstItem="gEg-jw-Xfd" firstAttribute="top" secondItem="xw8-Dr-NyQ" secondAttribute="topMargin" constant="-6" id="fe5-g7-2XR"/>
+                                            <constraint firstItem="gEg-jw-Xfd" firstAttribute="leading" secondItem="xw8-Dr-NyQ" secondAttribute="leadingMargin" constant="-6" id="kLk-aP-qvw"/>
+                                            <constraint firstItem="gEg-jw-Xfd" firstAttribute="centerY" secondItem="xw8-Dr-NyQ" secondAttribute="centerY" id="swh-XT-bZ5"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="myLabel" destination="gEg-jw-Xfd" id="is1-tT-vBj"/>
+                                            <segue destination="Tav-jS-uwi" kind="show" id="Uut-Yz-gSc"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="jCZ-1L-3SQ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="I58-f8-dxv"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="28e-Q5-lXT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3yq-zW-KRo"/>
+                            <constraint firstItem="28e-Q5-lXT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6L5-pT-nmK"/>
+                            <constraint firstItem="UBM-FP-Kby" firstAttribute="leading" secondItem="lfQ-zk-XhF" secondAttribute="leading" id="6NZ-7d-DlV"/>
+                            <constraint firstAttribute="bottom" secondItem="lfQ-zk-XhF" secondAttribute="bottom" constant="20" symbolic="YES" id="HCK-ln-Wgn"/>
+                            <constraint firstItem="UBM-FP-Kby" firstAttribute="trailing" secondItem="lfQ-zk-XhF" secondAttribute="trailing" id="KBv-m1-jhS"/>
+                            <constraint firstItem="28e-Q5-lXT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KYG-Jk-uIc"/>
+                            <constraint firstItem="28e-Q5-lXT" firstAttribute="trailing" secondItem="UBM-FP-Kby" secondAttribute="trailing" id="W3T-LJ-yQO"/>
+                            <constraint firstItem="28e-Q5-lXT" firstAttribute="leading" secondItem="UBM-FP-Kby" secondAttribute="leading" id="ask-44-39J"/>
+                            <constraint firstItem="UBM-FP-Kby" firstAttribute="top" secondItem="28e-Q5-lXT" secondAttribute="bottom" constant="8" symbolic="YES" id="dYS-GO-ee6"/>
+                            <constraint firstItem="lfQ-zk-XhF" firstAttribute="top" secondItem="UBM-FP-Kby" secondAttribute="bottom" constant="8" id="iYs-Bx-LPy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-175.36231884057972" y="34.239130434782609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WrU-no-8Qn">
+            <objects>
+                <viewController id="Tav-jS-uwi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wMU-Nk-vPM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helplinelogo" translatesAutoresizingMaskIntoConstraints="NO" id="VW1-z4-z0D">
+                                <rect key="frame" x="33" y="20" width="348" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="153" id="xZm-GO-nzw"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yrj-kD-vYV">
+                                <rect key="frame" x="56" y="202.00000000000003" width="302.66666666666669" height="114.33333333333334"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call us if you have these concerns:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBA-4d-fqT">
+                                        <rect key="frame" x="0.0" y="0.0" width="241.33333333333334" height="18"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• A medication mistake" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbt-iu-N6N">
+                                        <rect key="frame" x="0.0" y="23" width="133.66666666666666" height="15.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        <color key="textColor" red="0.14118" green="0.15293999999999999" blue="0.16078000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• You are being discharged before you are ready to leave" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mu5-jR-aoP">
+                                        <rect key="frame" x="0.0" y="43.333333333333343" width="302.66666666666669" height="14"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Picked up an infection wile in the facility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAz-EX-wQZ">
+                                        <rect key="frame" x="0.0" y="62.333333333333314" width="221.66666666666666" height="14"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Wrong treatment or care provided" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcT-T9-nVB">
+                                        <rect key="frame" x="0.0" y="81.333333333333314" width="188.66666666666666" height="14"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Other health care error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHe-H5-8pn">
+                                        <rect key="frame" x="0.0" y="100.33333333333331" width="128.66666666666666" height="14"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mvi-fQ-fI3">
+                                <rect key="frame" x="196" y="502.33333333333326" width="22" height="22"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.26612690090000002" green="0.52372604609999995" blue="0.76565712689999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GPS-Lu-Nqp" kind="show" id="4LZ-6a-dvf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Msg &amp; data rates may apply" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGP-wb-Dvy">
+                                <rect key="frame" x="139.33333333333337" y="447.33333333333331" width="137.66666666666663" height="13"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2018 Livanta LLC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cl2-Ma-Ear">
+                                <rect key="frame" x="158" y="532.33333333333337" width="98.333333333333314" height="13"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZ8-KS-WaQ">
+                                <rect key="frame" x="76" y="426" width="262" height="13.333333333333314"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Daily:">
+                                        <attributes>
+                                            <font key="NSFont" size="11" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="11" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" 9am-5pm ">
+                                        <attributes>
+                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Weekends/Holidays: ">
+                                        <attributes>
+                                            <font key="NSFont" size="11" name="HelveticaNeue-Bold"/>
+                                            <font key="NSOriginalFont" size="11" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="11am-3pm">
+                                        <attributes>
+                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TZY-De-YBl">
+                                <rect key="frame" x="86" y="388" width="242" height="30"/>
+                                <color key="backgroundColor" red="0.30877519568674844" green="0.62008476328654127" blue="0.91560160659896539" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="HJ6-Ge-cgZ"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="PRESS HERE TO CALL US">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Medium"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="xwy-Cb-VBg">
+                                <rect key="frame" x="126" y="468.33333333333331" width="163" height="26"/>
+                                <color key="backgroundColor" red="0.30877519568674844" green="0.62008476328654127" blue="0.91560160659896539" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="BUY-p8-XlH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="CHANGE YOUR STATE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="sKD-af-MPE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yrj-kD-vYV" firstAttribute="centerX" secondItem="TZY-De-YBl" secondAttribute="centerX" id="2by-yy-SD6"/>
+                            <constraint firstItem="TZY-De-YBl" firstAttribute="top" secondItem="yrj-kD-vYV" secondAttribute="bottom" constant="72" id="6rz-LD-9Ep"/>
+                            <constraint firstItem="yrj-kD-vYV" firstAttribute="top" secondItem="VW1-z4-z0D" secondAttribute="bottom" constant="29" id="6xI-Ck-S6g"/>
+                            <constraint firstItem="Cl2-Ma-Ear" firstAttribute="top" secondItem="Mvi-fQ-fI3" secondAttribute="bottom" constant="8" symbolic="YES" id="7Ru-CU-SNb"/>
+                            <constraint firstItem="Mvi-fQ-fI3" firstAttribute="top" secondItem="xwy-Cb-VBg" secondAttribute="bottom" constant="8" symbolic="YES" id="7hM-Ho-NsG"/>
+                            <constraint firstItem="xwy-Cb-VBg" firstAttribute="centerX" secondItem="Mvi-fQ-fI3" secondAttribute="centerX" id="8bD-g3-nxx"/>
+                            <constraint firstItem="uGP-wb-Dvy" firstAttribute="centerX" secondItem="xwy-Cb-VBg" secondAttribute="centerX" id="91G-jz-6Uo"/>
+                            <constraint firstItem="yZ8-KS-WaQ" firstAttribute="centerX" secondItem="xwy-Cb-VBg" secondAttribute="centerX" id="9sf-yl-lvI"/>
+                            <constraint firstItem="xwy-Cb-VBg" firstAttribute="top" secondItem="uGP-wb-Dvy" secondAttribute="bottom" constant="8" symbolic="YES" id="DZg-Qu-dhN"/>
+                            <constraint firstItem="uGP-wb-Dvy" firstAttribute="top" secondItem="yZ8-KS-WaQ" secondAttribute="bottom" constant="8" symbolic="YES" id="F1X-bo-zu3"/>
+                            <constraint firstItem="yZ8-KS-WaQ" firstAttribute="leading" secondItem="i8c-i1-HEt" secondAttribute="leading" constant="76" id="ONW-qE-zxY"/>
+                            <constraint firstItem="VW1-z4-z0D" firstAttribute="centerX" secondItem="yrj-kD-vYV" secondAttribute="centerX" id="SEm-Pg-Psa"/>
+                            <constraint firstItem="Mvi-fQ-fI3" firstAttribute="centerX" secondItem="Cl2-Ma-Ear" secondAttribute="centerX" id="aVp-Qw-lqy"/>
+                            <constraint firstItem="VW1-z4-z0D" firstAttribute="centerX" secondItem="wMU-Nk-vPM" secondAttribute="centerX" id="cCP-kB-yp4"/>
+                            <constraint firstItem="TZY-De-YBl" firstAttribute="centerX" secondItem="yZ8-KS-WaQ" secondAttribute="centerX" id="dPB-8b-jsa"/>
+                            <constraint firstItem="yZ8-KS-WaQ" firstAttribute="top" secondItem="TZY-De-YBl" secondAttribute="bottom" constant="8" symbolic="YES" id="h9Y-mz-U67"/>
+                            <constraint firstItem="VW1-z4-z0D" firstAttribute="top" secondItem="i8c-i1-HEt" secondAttribute="top" id="ifi-w5-TX9"/>
+                            <constraint firstItem="VW1-z4-z0D" firstAttribute="leading" secondItem="i8c-i1-HEt" secondAttribute="leading" constant="33" id="o5Q-ek-cba"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i8c-i1-HEt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="75A-jD-3hh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="672.46376811594212" y="35.054347826086961"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="z3h-jm-WIO">
+            <objects>
+                <viewController id="GPS-Lu-Nqp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="zFq-9K-9W9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doublelogoline" translatesAutoresizingMaskIntoConstraints="NO" id="lUq-RH-YrK">
+                                <rect key="frame" x="16" y="20" width="382" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="EVc-CO-vWf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qe-3r-fJp">
+                                <rect key="frame" x="16" y="85" width="382" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="6be-Vw-bLQ"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">This app's purpose is to provide a simple way to call the Medicare Quality HelpLine if you are concerned about the quality of your care.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="odk-po-FXL">
+                                <rect key="frame" x="16" y="164" width="382" height="186"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="186" id="d9Z-sz-de5"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">This material was prepared by Livanta LLC (bfccqioarea1.com/medicarequalityhelpline.html), the Quality Improvement Organization for BFCC Areas 1 and 5, under contract with the Centers for Medicare &amp; Medicaid Services (CMS), an agency of the U.S. Department of Health and Human Services. The content presented does not necessarily reflect CMS policy. 11SOW-MD-2015-QIOBFCC-BENE15.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ECo-9e-nId">
+                                <rect key="frame" x="16" y="358" width="382" height="198"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="198" id="hSU-PU-m5E"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">This app includes the states and territories of AK, AZ, CA, CT, HI, ID, ME, MA, NH, NJ, NV, NY, OR, PA, PR, RI, VI, VT, WA, the Pacific Territories of American Samoa, Guam, and the Commonwealth of the Northern Mariana Islands. This app tracks user usage data to try and improve our service. If you want to learn more about this process please visit our Privacy Policy at www.bfccqioarea1.com/privacy.html.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqE-nU-8D5">
+                                <rect key="frame" x="119" y="686" width="176" height="30"/>
+                                <color key="backgroundColor" red="0.3087751957" green="0.62008476329999995" blue="0.91560160660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="CLOSE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Tav-jS-uwi" kind="show" id="Mgn-yk-edt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lUq-RH-YrK" firstAttribute="leading" secondItem="hG9-aX-WQF" secondAttribute="leading" constant="16" id="10J-Kh-vKc"/>
+                            <constraint firstItem="0qe-3r-fJp" firstAttribute="trailing" secondItem="odk-po-FXL" secondAttribute="trailing" id="75e-xD-eQC"/>
+                            <constraint firstItem="0qe-3r-fJp" firstAttribute="top" secondItem="lUq-RH-YrK" secondAttribute="bottom" constant="8" symbolic="YES" id="CKO-MN-hfW"/>
+                            <constraint firstItem="odk-po-FXL" firstAttribute="top" secondItem="0qe-3r-fJp" secondAttribute="bottom" constant="8" symbolic="YES" id="Ipy-Kq-x1T"/>
+                            <constraint firstItem="lUq-RH-YrK" firstAttribute="leading" secondItem="0qe-3r-fJp" secondAttribute="leading" id="OwQ-kg-gO0"/>
+                            <constraint firstItem="odk-po-FXL" firstAttribute="trailing" secondItem="ECo-9e-nId" secondAttribute="trailing" id="UPO-CJ-8iI"/>
+                            <constraint firstItem="ECo-9e-nId" firstAttribute="top" secondItem="odk-po-FXL" secondAttribute="bottom" constant="8" symbolic="YES" id="d3S-Lz-e6E"/>
+                            <constraint firstAttribute="bottom" secondItem="cqE-nU-8D5" secondAttribute="bottom" constant="20" symbolic="YES" id="gJ3-lm-uvj"/>
+                            <constraint firstItem="lUq-RH-YrK" firstAttribute="trailing" secondItem="0qe-3r-fJp" secondAttribute="trailing" id="nrW-bd-DIf"/>
+                            <constraint firstItem="cqE-nU-8D5" firstAttribute="leading" secondItem="hG9-aX-WQF" secondAttribute="leading" constant="119" id="olY-zr-h6C"/>
+                            <constraint firstItem="odk-po-FXL" firstAttribute="leading" secondItem="ECo-9e-nId" secondAttribute="leading" id="rzm-31-0ua"/>
+                            <constraint firstItem="0qe-3r-fJp" firstAttribute="leading" secondItem="odk-po-FXL" secondAttribute="leading" id="sxB-vg-bXU"/>
+                            <constraint firstItem="lUq-RH-YrK" firstAttribute="top" secondItem="hG9-aX-WQF" secondAttribute="top" id="uRG-Ng-gCA"/>
+                            <constraint firstItem="lUq-RH-YrK" firstAttribute="centerX" secondItem="zFq-9K-9W9" secondAttribute="centerX" id="vaC-Iu-cTb"/>
+                            <constraint firstItem="ECo-9e-nId" firstAttribute="centerX" secondItem="cqE-nU-8D5" secondAttribute="centerX" id="zKv-mG-cD6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hG9-aX-WQF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GtK-BL-W5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1515" y="30"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="doublelogoline" width="255" height="41"/>
+        <image name="helplinelogo" width="635" height="278"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Uut-Yz-gSc"/>
+    </inferredMetricsTieBreakers>
 </document>

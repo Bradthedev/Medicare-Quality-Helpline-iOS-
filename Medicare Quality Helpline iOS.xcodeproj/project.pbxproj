@@ -14,6 +14,10 @@
 		E365752D1FFD6E3A006E26DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E365752B1FFD6E3A006E26DC /* LaunchScreen.storyboard */; };
 		E36575381FFD6E3B006E26DC /* Medicare_Quality_Helpline_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36575371FFD6E3B006E26DC /* Medicare_Quality_Helpline_iOSTests.swift */; };
 		E36575431FFD6E3B006E26DC /* Medicare_Quality_Helpline_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36575421FFD6E3B006E26DC /* Medicare_Quality_Helpline_iOSUITests.swift */; };
+		E3B9905B2005541D0091F75D /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B9905A2005541D0091F75D /* MyCollectionViewCell.swift */; };
+		E5A5D5292007F3330068AA78 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5A5D51C2007F3250068AA78 /* SQLite.framework */; };
+		E5A5D52A2007F33A0068AA78 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5A5D51C2007F3250068AA78 /* SQLite.framework */; };
+		E5A5D52B2007F33A0068AA78 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5A5D51C2007F3250068AA78 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +35,77 @@
 			remoteGlobalIDString = E365751E1FFD6E3A006E26DC;
 			remoteInfo = "Medicare Quality Helpline iOS";
 		};
+		E5A5D51B2007F3250068AA78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5A5D5112007F3240068AA78 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		E5A5D51D2007F3250068AA78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5A5D5112007F3240068AA78 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		E5A5D51F2007F3250068AA78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5A5D5112007F3240068AA78 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		E5A5D5212007F3250068AA78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5A5D5112007F3240068AA78 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		E5A5D5232007F3250068AA78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5A5D5112007F3240068AA78 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		E5A5D5252007F3250068AA78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5A5D5112007F3240068AA78 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		E5A5D5272007F3250068AA78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5A5D5112007F3240068AA78 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		E5A5D52C2007F33A0068AA78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5A5D5112007F3240068AA78 /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E5A5D52E2007F33A0068AA78 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E5A5D52B2007F33A0068AA78 /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E365751F1FFD6E3A006E26DC /* Medicare Quality Helpline iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Medicare Quality Helpline iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +121,9 @@
 		E365753E1FFD6E3B006E26DC /* Medicare Quality Helpline iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Medicare Quality Helpline iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E36575421FFD6E3B006E26DC /* Medicare_Quality_Helpline_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicare_Quality_Helpline_iOSUITests.swift; sourceTree = "<group>"; };
 		E36575441FFD6E3B006E26DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3B9905620054E4F0091F75D /* Medicare Quality Helpline iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Medicare Quality Helpline iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		E3B9905A2005541D0091F75D /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		E5A5D5112007F3240068AA78 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +131,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5A5D52A2007F33A0068AA78 /* SQLite.framework in Frameworks */,
+				E5A5D5292007F3330068AA78 /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +160,7 @@
 				E36575361FFD6E3B006E26DC /* Medicare Quality Helpline iOSTests */,
 				E36575411FFD6E3B006E26DC /* Medicare Quality Helpline iOSUITests */,
 				E36575201FFD6E3A006E26DC /* Products */,
+				E5A5D5102007F3240068AA78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,9 +180,11 @@
 				E36575221FFD6E3A006E26DC /* AppDelegate.swift */,
 				E36575241FFD6E3A006E26DC /* ViewController.swift */,
 				E36575261FFD6E3A006E26DC /* Main.storyboard */,
+				E3B9905A2005541D0091F75D /* MyCollectionViewCell.swift */,
 				E36575291FFD6E3A006E26DC /* Assets.xcassets */,
 				E365752B1FFD6E3A006E26DC /* LaunchScreen.storyboard */,
 				E365752E1FFD6E3A006E26DC /* Info.plist */,
+				E3B9905620054E4F0091F75D /* Medicare Quality Helpline iOS-Bridging-Header.h */,
 			);
 			path = "Medicare Quality Helpline iOS";
 			sourceTree = "<group>";
@@ -125,6 +207,28 @@
 			path = "Medicare Quality Helpline iOSUITests";
 			sourceTree = "<group>";
 		};
+		E5A5D5102007F3240068AA78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5A5D5112007F3240068AA78 /* SQLite.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5A5D5122007F3240068AA78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5A5D51C2007F3250068AA78 /* SQLite.framework */,
+				E5A5D51E2007F3250068AA78 /* SQLiteTests iOS.xctest */,
+				E5A5D5202007F3250068AA78 /* SQLite.framework */,
+				E5A5D5222007F3250068AA78 /* SQLiteTests Mac.xctest */,
+				E5A5D5242007F3250068AA78 /* SQLite.framework */,
+				E5A5D5262007F3250068AA78 /* SQLiteTests tvOS.xctest */,
+				E5A5D5282007F3250068AA78 /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +239,12 @@
 				E365751B1FFD6E3A006E26DC /* Sources */,
 				E365751C1FFD6E3A006E26DC /* Frameworks */,
 				E365751D1FFD6E3A006E26DC /* Resources */,
+				E5A5D52E2007F33A0068AA78 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E5A5D52D2007F33A0068AA78 /* PBXTargetDependency */,
 			);
 			name = "Medicare Quality Helpline iOS";
 			productName = "Medicare Quality Helpline iOS";
@@ -193,6 +299,7 @@
 				TargetAttributes = {
 					E365751E1FFD6E3A006E26DC = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					E36575321FFD6E3B006E26DC = {
@@ -218,6 +325,12 @@
 			mainGroup = E36575161FFD6E3A006E26DC;
 			productRefGroup = E36575201FFD6E3A006E26DC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E5A5D5122007F3240068AA78 /* Products */;
+					ProjectRef = E5A5D5112007F3240068AA78 /* SQLite.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E365751E1FFD6E3A006E26DC /* Medicare Quality Helpline iOS */,
@@ -226,6 +339,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E5A5D51C2007F3250068AA78 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = E5A5D51B2007F3250068AA78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E5A5D51E2007F3250068AA78 /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = E5A5D51D2007F3250068AA78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E5A5D5202007F3250068AA78 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = E5A5D51F2007F3250068AA78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E5A5D5222007F3250068AA78 /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = E5A5D5212007F3250068AA78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E5A5D5242007F3250068AA78 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = E5A5D5232007F3250068AA78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E5A5D5262007F3250068AA78 /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = E5A5D5252007F3250068AA78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E5A5D5282007F3250068AA78 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = E5A5D5272007F3250068AA78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E365751D1FFD6E3A006E26DC /* Resources */ = {
@@ -261,6 +426,7 @@
 			files = (
 				E36575251FFD6E3A006E26DC /* ViewController.swift in Sources */,
 				E36575231FFD6E3A006E26DC /* AppDelegate.swift in Sources */,
+				E3B9905B2005541D0091F75D /* MyCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +458,11 @@
 			isa = PBXTargetDependency;
 			target = E365751E1FFD6E3A006E26DC /* Medicare Quality Helpline iOS */;
 			targetProxy = E365753F1FFD6E3B006E26DC /* PBXContainerItemProxy */;
+		};
+		E5A5D52D2007F33A0068AA78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = E5A5D52C2007F33A0068AA78 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -425,12 +596,18 @@
 		E36575481FFD6E3B006E26DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 946NQBG6C8;
 				INFOPLIST_FILE = "Medicare Quality Helpline iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "livanta.Medicare-Quality-Helpline-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Medicare Quality Helpline iOS/Medicare Quality Helpline iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -439,12 +616,17 @@
 		E36575491FFD6E3B006E26DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 946NQBG6C8;
 				INFOPLIST_FILE = "Medicare Quality Helpline iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "livanta.Medicare-Quality-Helpline-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Medicare Quality Helpline iOS/Medicare Quality Helpline iOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
